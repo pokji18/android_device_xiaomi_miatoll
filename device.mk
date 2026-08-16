@@ -17,7 +17,7 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Dolby Atmos
-$(call inherit-product, vendor/sony/dolby/dolby.mk)
+$(call inherit-product, vendor/sony/dolby/sonydolby.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -279,6 +279,7 @@ PRODUCT_PACKAGES += \
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

@@ -76,7 +76,6 @@ TARGET_KERNEL_ADDITIONAL_FLAGS += LD=ld.lld AR=llvm-ar NM=llvm-nm STRIP=llvm-str
 TARGET_KERNEL_CONFIG := vendor/xiaomi/miatoll_defconfig
 TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6250
-TARGET_KERNEL_CLANG_VERSION := r563880c
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
@@ -150,8 +149,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2023-05-01
 
 # Sepolicy
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
-include device/lineage/sepolicy/libion/sepolicy.mk
+include device/custom/sepolicy/libperfmgr/sepolicy.mk
+include device/custom/sepolicy/libion/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/sony/timekeep/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
@@ -193,3 +192,4 @@ include vendor/xiaomi/miatoll/BoardConfigVendor.mk
 
 # Miui-Camera
 -include device/xiaomi/miuicamera-miatoll/BoardConfig.mk
+BUILD_BROKEN_DUP_RULES := true
