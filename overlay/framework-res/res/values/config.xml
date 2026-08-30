@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Memunculkan teks "Charging rapidly" pada arus 1.5A (1500000 microAmps) -->
+    <integer name="config_chargingFastThreshold">1500000</integer>
+    <!-- Mengizinkan deteksi arus maksimal 3.3A (3300000 microAmps) -->
+    <integer name="config_chargeMicroAmp">3300000</integer>
+</resources>
