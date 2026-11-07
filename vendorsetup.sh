@@ -1,5 +1,5 @@
 # Device
-git clone https://github.com/Shadowwisperia/android_vendor_xiaomi_miatoll -b 17 vendor/xiaomi/miatoll
+git clone https://github.com/pokji18/android_vendor_xiaomi_miatoll.git -b 17 vendor/xiaomi/miatoll
 
 # Kernel
 git clone https://github.com/pokji18/kernel_android_sm6250.git -b main kernel/xiaomi/sm6250 --depth 1
